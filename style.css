@@ -1,0 +1,212 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Roboto';
+}
+
+header {
+    width: 100%;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #036a38;
+    outline: #f2a900 solid 6px;
+}
+
+.stripe {
+    width: 100%;
+    color: #f2a900;
+    font-size: 6px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.notColl{
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: white;
+    background-color: #036a38;
+    border-color: #036a38;
+    list-style: none;
+    font-family: 'Roboto';
+    width: 200px;
+}
+
+.collapsible {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #036a38;
+    border-color: #036a38;
+    list-style: none;
+    text-align: center;
+    font-family: 'Roboto';
+    width: 200px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebarList{
+    overflow: hidden;
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+
+.active, .collapsible:hover {
+    background-color: #f2a900;
+    height: 75px;
+    width: 200px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    height: 0px;
+    width: auto;
+    flex-direction: row;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.titles {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #036a38;
+    padding-top: 30px;
+}
+
+.subtitles {
+    font-weight: bold;
+    color: #666666;
+    font-size: 1.2em;
+}
+
+.list {
+    font-family: 'Roboto';
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    width: 100%;
+}
+
+.hiddenBurger {
+    font-size:1.2em;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.active, .collapsible:hover {
+    height: 75px;
+    width: 100%;
+    background-color: #036a38;
+}
+
+.hiddenBurger{
+    display: block;
+    padding-right: 10px;
+}
+
+.container{
+    margin:0;
+    background: #036a38;
+    position: absolute;
+    right: -100%;
+    top: 82px;
+    width: 50%;
+    height: calc(100% - 82px);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.sidebar {
+    border: black solid 1px;
+    text-align: flex-start;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+}
+
+.sidebarList {
+    display: flex;
+    flex-direction: column;
+    height: 0px;
+}
+
+.sidebarTitles {
+    height: calc(100% - 82px);
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #036a38;
+    padding-top: 30px;
+    background-color: #00391f;
+    border-color: grey;
+    text-align: left;
+    width: 100%;
+}
+
+.sidebarHeader {
+    color: #036a38;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Roboto';
+    padding-left: 10px;
+}
+
+.sidebarSubHeaders {
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
+.collapsible{
+    height: calc(100% / 8);
+    align-self: flex-start;
+    text-align: left;
+}
+
+.notColl {
+    border: black solid 1px;
+    height: 50px;
+    align-self: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.content{
+    height: 0px;
+    width: 0px;
+}
+
+.nav-active {
+    right: 0;
+}
+}
+
